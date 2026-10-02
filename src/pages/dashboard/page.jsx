@@ -2,40 +2,40 @@ export default function Dashboard() {
         return (
                 <div className="p-8 items-center flex flex-col overflow-hidden">
                         {/* card section */}
-                        <div className='h-70 w-full flex items-center justify-between'>
+                        <div className='h-40 w-full flex items-center justify-around'>
 
                                 {/* card okupansi */}
-                                <div className="w-60 h-60 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4">
+                                <div className="w-60 h-40 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4">
                                         <div className="flex justify-between">
                                                 <h1 className='font-bold text-md'>Tingkat Okupansi</h1>
-                                                <div className="w-13 h-13 border-black border-t-2 border-l-2 border-r-4 border-b-4 bg-gray-300 rounded-xl">
-                                                        kasur
+                                                <div className="w-13 h-13 border-black flex items-center justify-center border-t-2 border-l-2 border-r-4 border-b-4 bg-gray-300 rounded-xl">
+                                                       <i class="fa-solid fa-bed"></i>
                                                 </div>
                                         </div>
                                         <h2 className="text-5xl font-medium">18/<span className="text-3xl">20</span> </h2>
                                 </div>
-                                <div className="w-60 h-60 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4">
+                                <div className="w-60 h-40 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4">
                                         <div className="flex justify-between">
                                                 <h1 className='font-bold text-md'>Total Tagihan</h1>
-                                                <div className="w-13 h-13 border-black border-t-2 border-l-2 border-r-4 border-b-4 bg-gray-300 rounded-xl">
-                                                        duid
+                                                <div className="w-13 h-13 border-black flex items-center justify-center border-t-2 border-l-2 border-r-4 border-b-4 bg-gray-300 rounded-xl">
+                                                        <i class="fa-solid fa-money-bill-wave"></i>
                                                 </div>
                                         </div>
                                         <h2 className="text-xl font-medium">Rp 100.000.000</h2>
                                 </div>
-                                <div className="w-60 h-60 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4">
+                                <div className="w-60 h-40 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4">
                                         <div className="flex justify-between">
                                                 <h1 className='font-bold text-md'>Pemakaian Listrik</h1>
-                                                <div className="w-13 h-13 border-black border-t-2 border-l-2 border-r-4 border-b-4 bg-gray-300 rounded-xl">
-                                                        listrik
+                                                <div className="w-13 h-13 border-black flex items-center justify-center border-t-2 border-l-2 border-r-4 border-b-4 bg-gray-300 rounded-xl">
+                                                       <i class="fa-solid fa-bolt"></i>
                                                 </div>
                                         </div>
                                 </div>
-                                <div className="w-60 h-60 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4 bg-amber-300">
+                                <div className="w-60 h-40 border-t-2 border-b-4 border-r-4 border-l-2 border-black rounded-xl p-4 bg-amber-300">
                                         <div className="flex justify-between">
                                                 <h1 className='font-bold text-md'>Komplain & Masalah</h1>
-                                                <div className="w-13 h-13 border-black border-t-2 border-l-2 border-r-4 border-b-4 bg-red-300 rounded-xl">
-                                                        danger
+                                                <div className="w-13 h-13 border-black flex items-center justify-center border-t-2 border-l-2 border-r-4 border-b-4 bg-red-300 rounded-xl">
+                                                        <i class="fa-solid fa-triangle-exclamation"></i>
                                                 </div>
                                         </div>
                                 </div>
@@ -59,6 +59,26 @@ export default function Dashboard() {
                                         </div>
                                 </div>
                                 <hr className='h-0.5 border-black bg-black mt-4'/>
+
+                        </div>
+
+                        {/* action cards */}
+                        <div className="w-full h-min-100 border-black border-t-2 border-l-2 border-b-4 border-r-4 rounded-xl p-4 mt-10">
+                                <div className="flex justify-start">
+                                        <div className="w-15 h-15 border-black border-t-2 border-l-2 border-b-4 border-r-4 rounded-lg p-2 bg-red-500 flex justify-center items-center mr-4">
+                                                <i class="fa-solid fa-triangle-exclamation text-xl"></i>
+                                        </div>
+                                        <div>
+                                                <h1 className="font-bold text-lg">Butuh Tindakan Secepatnya</h1>
+                                                <p>Prioritas Laporan Kos</p>
+                                        </div>
+                                </div>
+                                <hr className='h-0.5 border-black bg-black mt-4'/>
+                                <div className="flex mt-4 justify-around">
+                                        <div className="w-90 h-100 border-black border-2 rounded-lg"></div>
+                                        <div className="w-90 h-100 border-black border-2 rounded-lg"></div>
+                                        <div className="w-90 h-100 border-black border-2 rounded-lg"></div>
+                                </div>
 
                         </div>
                 </div>
